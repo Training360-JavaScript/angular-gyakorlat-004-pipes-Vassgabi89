@@ -16,9 +16,10 @@ export class AppComponent {
    * FELADAT!
    * Hozd létre az alábbi változót.
    * @var phrase {string} - a keresőkifejezés
+   * @default ''
    */
 
-
+  phrase: string = ''
 
   constructor(
     private userService: UserService,
@@ -38,6 +39,8 @@ export class AppComponent {
    * @returns {void}
    */
 
-
+   onChangePhrase(event: Event): void {
+    this.phrase = (event.target as HTMLInputElement).value
+   }
 
 }
