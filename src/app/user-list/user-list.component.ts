@@ -53,8 +53,8 @@ export class UserListComponent implements OnInit {
    * @returns {void}
    */
 
-   onColumnSelect(key: string) :void {
-     this.columnKey=key
-   }
+  onColumnSelect(key: string): void {
+    this.columnKey = key
+  }
 
 }

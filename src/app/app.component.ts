@@ -23,7 +23,7 @@ export class AppComponent {
 
   constructor(
     private userService: UserService,
-  ) {}
+  ) { }
 
   onDeleteUser(user: User): void {
     this.userService.removeUser(user);
@@ -39,8 +39,8 @@ export class AppComponent {
    * @returns {void}
    */
 
-   onChangePhrase(event: Event): void {
+  onChangePhrase(event: Event): void {
     this.phrase = (event.target as HTMLInputElement).value
-   }
+  }
 
 }

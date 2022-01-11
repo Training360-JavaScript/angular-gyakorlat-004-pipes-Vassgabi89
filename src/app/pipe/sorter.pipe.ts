@@ -19,7 +19,7 @@ export class SorterPipe implements PipeTransform {
      * térj vissza a value változóval.
      */
 
-     if (Array.isArray(value) !== true || !key) {return value}
+    if (Array.isArray(value) !== true || !key) { return value }
 
     /**
      * FELADAT!
@@ -31,12 +31,12 @@ export class SorterPipe implements PipeTransform {
      *  összehasonlításának az eredményével.
      */
 
-return value.sort((a,b) => {
-  if (Number.isInteger(a[key]) && Number.isInteger(b[key])) {return a[key]-b[key]}
-    else{
-      return (a[key]).toString().toLowerCase().localeCompare((b[key]).toString().toLowerCase())
-    }
-})
+    return value.sort((a, b) => {
+      if (Number.isInteger(a[key]) && Number.isInteger(b[key])) { return a[key] - b[key] }
+      else {
+        return (a[key]).toString().toLowerCase().localeCompare((b[key]).toString().toLowerCase())
+      }
+    })
 
   }
 }

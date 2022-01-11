@@ -1,4 +1,3 @@
-
 /**
   A táblázat fejléc celláin (th) alkalmazd a következő stílusokat:
   1. Ha az egeret fölé viszik, legyen a háttérszíne halványszürke.
@@ -6,7 +5,7 @@
 */
 
 th {
-  &:hover{
+  &:hover {
     background-color: lightgrey;
     cursor: pointer;
   }

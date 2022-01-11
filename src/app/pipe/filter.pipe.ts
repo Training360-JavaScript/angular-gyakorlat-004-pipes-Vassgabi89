@@ -19,7 +19,7 @@ export class FilterPipe implements PipeTransform {
      * térj vissza a value változóval.
      */
 
-    if (Array.isArray(value) !== true || !phrase || !key) {return value}
+    if (Array.isArray(value) !== true || !phrase || !key) { return value }
 
     /**
      * FELADAT!
@@ -28,7 +28,7 @@ export class FilterPipe implements PipeTransform {
      * 2. A visszatérési érték true, ha valahol szerepel benne a phrase.
      * TIPP: az összehasonlítás előtt a két értéket alakítsd kisbetűsre.
      */
-    
+
     return value.filter(item => {
       let stringedValue = item[key].toString()
       return stringedValue.toLowerCase().includes(phrase.toLowerCase())
